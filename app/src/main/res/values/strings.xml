@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StarWars</string>
+    <string name="slow">SLOW</string>
+    <string name="fast">FAST</string>
+    <string name="pause">PAUSE</string>
+    <string name="restart">RESTART</string>
+    <string name="resume">RESUME</string>
+    <string name="myName">5931391721 Ukrit Wattanakulchart sec1</string>
+</resources>

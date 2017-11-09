@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.starwars.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <com.example.starwars.StarWars
+        android:id="@+id/starWars2"
+        android:layout_width="459dp"
+        android:layout_height="887dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/myName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClickMe"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/slow"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="@string/slow"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pause"
+        app:layout_constraintLeft_toRightOf="@+id/pause"
+        app:layout_constraintRight_toLeftOf="@+id/fast"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/fast"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fast"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pause"
+        app:layout_constraintLeft_toRightOf="@+id/slow"
+        app:layout_constraintRight_toLeftOf="@+id/restart"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/slow"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="@string/restart"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pause"
+        app:layout_constraintLeft_toRightOf="@+id/fast"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+
+</android.support.constraint.ConstraintLayout>
